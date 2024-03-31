@@ -11,15 +11,23 @@
     <h1>Kalkulator BMI</h1>
     <p>berat badan ideal adalah impian semua orang. Tak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga dapat menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
 <div class = kotak>
-      <p>jenis kelamin</p>
-      <p><input type='checkbox' name='bahasa1' value='Laki' />Laki-laki</p>
-      <p><input type='checkbox' name='bahasa2' value='Perempuan' />Perempuan</p>
-      <p><input type= list name='bahasa1' value='' />berat badan</p>
-      <p><input type='list' name='bahasa2' value='' />tinggi badan</p>
-      <div class="penghitung">
-      <button type='submit'> Hitung BMI </button>
-    </div>
-      <input type='submit' name='kirim' value='reset'/>
+   <p>jenis kelamin</p>
+      <p class="kelamin">
+        <input type='radio' id="laki" name='jenis_kelamin' value='Laki' />
+        <label for="laki"> Laki-laki</label><br>
+      </p>
+      <p class="kelamin">
+        <input type='radio' id="perempuan" name='jenis_kelamin' value='Perempuan' />
+        <label for="perempuan">Perempuan</label><br>
+      </p>      
+      <list>berat badan
+        <br> <input class="a" type= list name='bahasa1' value='' /> <br></list>
+      <list>usia 
+        <br><input class="a" type= list name='bahasa1' value=''><br></list>
+      <list>tinggi badan
+        <br><input class="a" type='list' name='bahasa2' value='' /><br></list>
+      <button> Hitung BMI </button>
+      <button class="reset"> reset</button>
 </form>
 </div>
 </body>
