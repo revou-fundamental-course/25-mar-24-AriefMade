@@ -3,11 +3,17 @@
     font-size: small;
     
 }
-.kotak {
+.kotak{
+  
+    width:max-content;
     height: 500px;
-    width: 900px;
     background-color: rgb(228, 227, 227);
     font-size: 20px;
+  display: flex;
+    border : 1px solid black;
+border-radius: 20px;
+    margin: auto;
+
 }
 .kelamin{
     font-weight: bold;
@@ -40,9 +46,40 @@ cursor: pointer;
 }
   
   button:hover {
-    background-color:rgb(55, 145, 156) /* Darker Green */
+    background-color:rgb(55, 145, 156) /* Darker blue */
   }
 
   .reset:hover {
-    background-color:rgb(201, 201, 201) /* Darker Green */
+    background-color:rgb(201, 201, 201) /* Darker white*/
+  }
+ 
+.kanan{
+  flex: 2;
+  padding-left: 200px;
+  padding-right: 20px;
+}
+.kiri{
+  flex: 2;
+  padding-left: 20px;
+}
+
+button1 {
+  width: 200px;
+  height: 40px;
+  border: 0px;
+  background-color: #48d6d6;
+  border-radius: 10px;
+  color: white; 
+  padding: center; 
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight:600;
+  margin: 2px 3px;
+  cursor: pointer; 
+}
+
+  button1:hover {
+    background-color:rgb(55, 145, 156) /* Darker blue */
   }
