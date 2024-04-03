@@ -5,41 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator BMI</title>
     <link rel="stylesheet" href="styleBody.css">
-    <script src="innerCalculating.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="kalkulator">Kalkulator BMI</div>
     <p class="tulisan">berat badan ideal adalah impian semua orang. Tak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga dapat menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
-<div class = kotak>
-  <div class= kiri> 
-   <p class="hasil">jenis kelamin</p>
-      <p class="kelamin">
-        <input type='radio' id="laki" name='jenis_kelamin' value='Laki' />
+    <div class = kotak>
+      <div class= kiri> 
+        <p class="hasil">jenis kelamin</p>
+        <p class="kelamin">
+          <input type='radio' id="laki" name='jenis_kelamin' value='Laki' />
         <label for="laki"> Laki-laki</label><br>
       </p>
       <p class="kelamin">
         <input type='radio' id="perempuan" name='jenis_kelamin' value='Perempuan' />
         <label for="perempuan">Perempuan</label><br>
       </p>      
-      <inputan id="ingputt">
-                <list>berat badan
-                    <br><input class="a" type= list name='bahasa1' value='' id="beratBadan" placeholder="Masukkan dalam bentuk angka"/></list><br>
+      <form id="ingputt">
+        <label for="beratBadan">Berat Badan</label><br>
+        <input class="a" type="list" name="beratBadan" id="beratBadan" placeholder="Masukkan dalam bentuk angka" /><br>        
                 <list>usia 
-                   <br><input class="a" type= list name='bahasa1' value=''placeholder="Masukkan dalam bentuk angka"> <br>
+                  <br><input class="a" type= list name='bahasa1' value=''placeholder="Masukkan dalam bentuk angka"> <br>
                 <list>tinggi badan
-                    <br><input class="a" type='list' name='bahasa2' value='' id ="tinggiBadan" placeholder="Masukkan dalam bentuk angka" /></list> <br>
-                <button type="submit"> Hitung BMI </button>
+                  <br><input class="a" type='list' name='tinggiBadan' value='' id ="tinggiBadan" placeholder="Masukkan dalam bentuk angka" /></list> <br>
+                  <button type="submit"> Hitung BMI </button>
                  <button class="reset"> reset</button>
-    </inputan>
-    </div>
-
-  
-    <div class="kanan">
-      <p class="hasil">hasil</p>
-    </div>
-</form>
-</div>
-</body>
-</html>
-
-<!--   -->
+                </div>
+                <div class="kanan">
+                    <p class="hasil" id="hasil">Hasil</p>
+                    <span id="hasilBMI"></span>
+                </div>
+            </div>
+            <script src="innerCalculating.js"></script>
+        </body>
+        </html>
