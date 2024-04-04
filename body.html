@@ -11,30 +11,30 @@
     <p class="tulisan">berat badan ideal adalah impian semua orang. Tak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga dapat menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
     <div class = kotak>
       <div class= kiri> 
-        <p class="hasil">jenis kelamin</p>
+        <p class="text">jenis kelamin</p>
         <p class="kelamin">
           <input type='radio' id="laki" name='jenis_kelamin' value='Laki' />
         <label for="laki"> Laki-laki</label><br>
       </p>
       <p class="kelamin">
-        <input type='radio' id="perempuan" name='jenis_kelamin' value='Perempuan' />
+        <input type='radio' id="perempuan" name="jenis_kelamin" value="Perempuan" />
         <label for="perempuan">Perempuan</label><br>
       </p>      
       <form id="ingputt">
-        <label for="beratBadan">Berat Badan</label><br>
-        <input class="a" type="list" name="beratBadan" id="beratBadan" placeholder="Masukkan dalam bentuk angka" /><br>        
-                <list>usia 
-                  <br><input class="a" type= list name='bahasa1' value=''placeholder="Masukkan dalam bentuk angka"> <br>
-                <list>tinggi badan
-                  <br><input class="a" type='list' name='tinggiBadan' value='' id ="tinggiBadan" placeholder="Masukkan dalam bentuk angka" /></list> <br>
-                  <button type="submit"> Hitung BMI </button>
-                 <button class="reset"> reset</button>
+              <label for="beratBadan">Berat Badan</label><br>
+              <input class="a" type="text" name="beratBadan" id="beratBadan" placeholder="Masukkan dalam bentuk angka" /><br>        
+                <label>usia 
+                  <br><input class="a" type="text" name='usia' id="usia" placeholder="Masukkan dalam bentuk angka" /><br>
+                <label>tinggi badan
+                  <br><input class="a" type="text" name='tinggiBadan' value='' id ="tinggiBadan" placeholder="Masukkan dalam sentimeter(cm)" /></label> <br>
+                  <button type="button" onclick="hitungBMI()"> Hitung BMI </button>
+                  <button type="button" class="reset" onclick="resetForm()">Reset</button>
                 </div>
                 <div class="kanan">
-                    <p class="hasil" id="hasil">Hasil</p>
-                    <span id="hasilBMI"></span>
+                  <p class="hasil" id="hasil">Hasil</p>
+                  <span class="ingpokan" id="hasilBMI"></span>
                 </div>
-            </div>
-            <script src="innerCalculating.js"></script>
-        </body>
-        </html>
+              </div>
+              <script src="innerCalculating.js"></script>
+</body>
+</html>

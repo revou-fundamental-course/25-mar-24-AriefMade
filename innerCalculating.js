@@ -1,35 +1,44 @@
+//memfungsikan tombol
 document.querySelector('button[type="button"]').addEventListener('click', hitungBMI);
 
+//mengambil data
 function hitungBMI() {
     const weight = parseFloat(document.getElementById('beratBadan').value);
     const height = parseFloat(document.getElementById('tinggiBadan').value) / 100;
-
+    const age = parseFloat(document.getElementById('usia').value);
+//ini bagian memasukkan ke variabel
     console.log('Berat Badan:', weight);
     console.log('Tinggi Badan:', height);
-
-    if (isNaN(weight) || isNaN(height)) {
+    console.log('Usia:', age);
+//kalo salah
+    if (isNaN(weight) || isNaN(height) || isNaN(age)) {
         alert('Masukkan berat badan, tinggi badan, dan usia dalam bentuk angka.');
         return;
     }
-
+//kalo benar lanjut perhitungan
     const bmi = weight / (height * height);
     const kategori = getKategoriBMI(bmi);
-
+//hasilnya disimpan disini
     document.getElementById('hasilBMI').textContent = `BMI Anda: ${bmi.toFixed(2)} (${kategori})`;
 }
-
+//pengecekan hasil masuk ke kategori mana
 function getKategoriBMI(bmi) {
     if (bmi < 18.5) {
-        return 'Kurus';
+        return 'Kekurangan berat badan';
     } else if (bmi < 24.9) {
-        return 'Normal';
+        return 'Normal (ideal)';
     } else if (bmi < 29.9) {
-        return 'Gemuk';
+        return 'Kelebihan berat badan';
     } else {
-        return 'Obesitas';
+        return 'Kegemukan (Obesitas)';
     }
 }
 
+//tombol resetnya 
+
 function resetForm() {
-    document.getElementById('ingputt').reset();
+    document.getElementById('beratBadan').value = '';
+    document.getElementById('tinggiBadan').value = '';
+    document.getElementById('usia').value = '';
+    document.getElementById('hasilBMI').textContent = '';
 }
